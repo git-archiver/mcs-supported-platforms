@@ -1,0 +1,1 @@
+# mcs-supported-platforms
