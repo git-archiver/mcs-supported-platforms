@@ -1,4 +1,4 @@
-#LinkIt One Getting Started Contents
+#LinkIt One Tutorial
 
 ##Computer and Board Setup
 
@@ -25,7 +25,7 @@ An excellent guide for this setup can be found at [here](http://labs.mediatek.co
 Now that your computer and your IDEs are all set up, it's time to integrate some libraries! For this example, the only library we need is the HttpClient library, which can be found [here](https://github.com/amcewen/HttpClient/releases). Download the .zip file, then open up your Arduino IDE.
 
 In the "Sketch" drop-down, click on "Import Libraries", then navigate to your .zip file.
-![]( images/img_linkitone_01.png )
+![]( ../images/img_linkitone_01.png )
 
 
 ##Cloud Setup
@@ -38,7 +38,7 @@ In this cloud setup, we're going to create a virtual test device on MCS that rep
 
 A flow chart diagram is provided below for further illustration:
 
-![]( images/img_linkitone_02.png )
+![]( ../images/img_linkitone_02.png )
 
 ###Setup requirements
 
@@ -53,57 +53,57 @@ There are no additional electrical components required.
 
 After **logging into your MCS account**, select **Development** on the navigation bar and click Create to **create** a new prototype.
 
-![]( images/img_linkitone_03.png )
+![]( ../images/img_linkitone_03.png )
 
 Plop in whatever **name**, **prototype version**, **description**, and industry you'd like. However, make sure to select the **LinkIt ONE (MT2502)** option underneath the **Hardware Platform** dropdown list. Click **Save**.
 
-![]( images/img_linkitone_04.png )
+![]( ../images/img_linkitone_04.png )
 
 Click on **Detail**.
 
-![]( images/img_linkitone_05.png )
+![]( ../images/img_linkitone_05.png )
 
 Select the **Data channel** tab and click on **Add** to create a new data channel.
 
-![]( images/img_linkitone_06.png )
+![]( ../images/img_linkitone_06.png )
 
 In this tutorial, we're going to create two data channels. One is a display-type data channel that will reflect the status of the LED light, and the other is a controller-type data channel that we'll use to issue commands to the board to switch the LED on and off.
 
 Select **Add** on the Display data channel card, and **key in** the following information.
 
-![]( images/img_linkitone_07.png )
+![]( ../images/img_linkitone_07.png )
 
-![]( images/img_linkitone_08.png )
+![]( ../images/img_linkitone_08.png )
 
 **Remember the data channel id**; we'll use this later in the tutorial to connect the data channel to the API.
 
 Now, select **Add** on the controller data channel card, and **key in** the following information:
 
-![]( images/img_linkitone_09.png )
+![]( ../images/img_linkitone_09.png )
 
-![]( images/img_linkitone_10.png )
+![]( ../images/img_linkitone_10.png )
 
 Again, **please take note** of the **data channel id**.
 
 If done correctly, you should be able to view the two data channels you just created in your prototype details page.
 
-![]( images/img_linkitone_11.png )
+![]( ../images/img_linkitone_11.png )
 
 ###Step 2. Create Your Test Device
 
 Click **Create Test Device** on the right upper corner of the page.
 
-![]( images/img_linkitone_12.png )
+![]( ../images/img_linkitone_12.png )
 
 **Fill out** whatever device name and description you'd like. In this tutorial, we've used "LED Control" as the device name, but you can use whatever you want.
 
-![]( images/img_linkitone_13.png )
+![]( ../images/img_linkitone_13.png )
 
 Click **Go to detail** to open your test device details page:
 
-![]( images/img_linkitone_14.png )
+![]( ../images/img_linkitone_14.png )
 
-![]( images/img_linkitone_15.png )
+![]( ../images/img_linkitone_15.png )
 
 Please take note of the **deviceId** and **deviceKey**. We'll use this in the tutorial later.
 
@@ -126,11 +126,11 @@ You're finally all set to splash some code onto your board. Open a new sketch in
 
 Now, you're going to want to customize this code to your unique board and cloud. Take your deviceID and deviceKey you grabbed from the previous step, and plop them in the correct places.
 
-![]( images/img_linkitone_16.png )
+![]( ../images/img_linkitone_16.png )
 
 Next, configure the Wi-fi name and password so your board has access to whatever Wi-Fi it's connecting to.
 
-![]( images/img_linkitone_17.png )
+![]( ../images/img_linkitone_17.png )
 
 **Just a note: your own Wi-Fi name and password are almost certainly going to be different than the ones shown here. Also, you shouldn't need to touch anything else other than the highlighted portions shown!**
 
@@ -147,18 +147,18 @@ The code that we just put in simply allows MCS to control an LED light on your b
 
 You're all done; time to see it in action! Make sure nothing's wrong with your Wi-Fi and that your board can see it, and upload your code to your board. Check your Serial Output to confirm that it's live and connected.
 
-![]( images/img_linkitone_18.png )
+![]( ../images/img_linkitone_18.png )
 
-![]( images/img_linkitone_19.png )
+![]( ../images/img_linkitone_19.png )
 
 Now, all you need to do is to go back to your devices page. Click on the LED controller! When it flips to the ON state, the LED light on your board should turn on.
 
-![]( images/img_linkitone_20.png )
+![]( ../images/img_linkitone_20.png )
 
 If you click the controller again and flip the switch back to the OFF state, the LED light on your board should turn off. Isn't that cool?
 
-![]( images/img_linkitone_21.png )
-![]( images/img_linkitone_22.JPG )
+![]( ../images/img_linkitone_21.png )
+![]( ../images/img_linkitone_22.JPG )
 
 
 
