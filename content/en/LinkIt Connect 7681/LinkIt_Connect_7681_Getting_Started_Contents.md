@@ -1,4 +1,4 @@
-# LinkIt Connect 7681 Getting Started Contents
+# LinkIt Connect 7681 Tutorial
 
 ## Setup
 
