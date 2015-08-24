@@ -14,6 +14,7 @@ The great thing about the Linkit Connect 7681 is that it requires almost no setu
 | 03 | GPIO_03 | PWM_03 |
 | 04 | GPIO_04 | PWM_04 |
 
+
 Before you start, though, you're going to want a couple of things, including an **Android smartphone** that can access Wi-Fi, a **live Wi-Fi network** (and its **SSID** and **password**), a **micro-USB cord**, and a **laptop**.
 
 a. Go ahead and **access the Google Play store** on your smartphone and **download the Mediatek Cloud Sandbox mobile application**, or simply **scan this QR code**:
