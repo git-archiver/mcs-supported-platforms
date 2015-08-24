@@ -1,6 +1,6 @@
-#LinkIt One Tutorial
+# LinkIt One Tutorial
 
-##Computer and Board Setup
+## Computer and Board Setup
 
 Before you dump some code onto your board and link it up to the cloud, you're going to want to make sure your computer and board are set up the right way. This can be done in three steps:
 
@@ -20,7 +20,7 @@ An excellent guide for this setup can be found at [here](http://labs.mediatek.co
 
 **Just a note: The current LinkIt One SDK is only compatible with Arduino IDE versions 1.5.6-r2 BETA or 1.5.7 BETA.**
 
-##Add Libraries
+## Add Libraries
 
 Now that your computer and your IDEs are all set up, it's time to integrate some libraries! For this example, the only library we need is the HttpClient library, which can be found [here](https://github.com/amcewen/HttpClient/releases). Download the .zip file, then open up your Arduino IDE.
 
@@ -28,11 +28,11 @@ In the "Sketch" drop-down, click on "Import Libraries", then navigate to your .z
 ![]( ../images/img_linkitone_01.png )
 
 
-##Cloud Setup
+## Cloud Setup
 
 Almost there! At this point, you're going to want to set up the MCS cloud so you can control and track your board. We've made it really easy; no downloading or coding required!
 
-###Introduction
+### Introduction
 
 In this cloud setup, we're going to create a virtual test device on MCS that represents your LinkIt One board. We'll use this test device to upload Arduino code that pushes data points containing the state of the D13 LED on your board. The test device achieves this via the use of RESTful APIs, and furthermore, MCS is able to remotely control the state of the LED by using a TCP Socket.
 
@@ -40,7 +40,7 @@ A flow chart diagram is provided below for further illustration:
 
 ![]( ../images/img_linkitone_02.png )
 
-###Setup requirements
+### Setup requirements
 
 Before we begin, please make sure you have:
 
@@ -49,7 +49,7 @@ Before we begin, please make sure you have:
 
 There are no additional electrical components required.
 
-###Step 1. Creating your Prototype
+### Step 1. Creating your Prototype
 
 After **logging into your MCS account**, select **Development** on the navigation bar and click Create to **create** a new prototype.
 
@@ -89,7 +89,7 @@ If done correctly, you should be able to view the two data channels you just cre
 
 ![]( ../images/img_linkitone_11.png )
 
-###Step 2. Create Your Test Device
+### Step 2. Create Your Test Device
 
 Click **Create Test Device** on the right upper corner of the page.
 
@@ -107,7 +107,7 @@ Click **Go to detail** to open your test device details page:
 
 Please take note of the **deviceId** and **deviceKey**. We'll use this in the tutorial later.
 
-###Step 3. Obtain Device ID, Device Key, Data Channel ID
+### Step 3. Obtain Device ID, Device Key, Data Channel ID
 
 Here's a quick summary of all the key pieces of information we've obtained so far from this tutorial:
 
@@ -120,7 +120,7 @@ Here's a quick summary of all the key pieces of information we've obtained so fa
 
 **Just a note: the deviceId and deviceKey shown here will be different from yours. Make sure to use your obtained values instead!**
 
-##Add Source Code
+## Add Source Code
 
 You're finally all set to splash some code onto your board. Open a new sketch in your Arduino IDE and paste the following code into it: [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
 
@@ -143,7 +143,7 @@ The code that we just put in simply allows MCS to control an LED light on your b
 4. Listens for any switch commands issued by MCS via the TCP connection.
 5. Refresh the heartbeat for the TCP connection every 90 seconds.
 
-###Run it and go!
+### Run it and go!
 
 You're all done; time to see it in action! Make sure nothing's wrong with your Wi-Fi and that your board can see it, and upload your code to your board. Check your Serial Output to confirm that it's live and connected.
 
