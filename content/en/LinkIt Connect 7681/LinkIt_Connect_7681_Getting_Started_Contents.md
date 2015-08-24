@@ -1,6 +1,6 @@
 # LinkIt Connect 7681 Tutorial
 
-## Setup
+# Step 1. Setup
 
 The great thing about the Linkit Connect 7681 is that it requires almost no setup whatsoever to start connecting and utilizing MCS! There's no code or installation of any SDK to worry about. The board provides 1 UART port and 5 GPIO pins that each can implement PWM. Below is a list of those pins and their corresponding data channel IDs that can be used to connect to MCS:
 
@@ -15,6 +15,7 @@ The great thing about the Linkit Connect 7681 is that it requires almost no setu
 | 04 | GPIO_04 | PWM_04 |
 
 
+
 Before you start, though, you're going to want a couple of things, including an **Android smartphone** that can access Wi-Fi, a **live Wi-Fi network** (and its **SSID** and **password**), a **micro-USB cord**, and a **laptop**.
 
 a. Go ahead and **access the Google Play store** on your smartphone and **download the Mediatek Cloud Sandbox mobile application**, or simply **scan this QR code**:
@@ -23,7 +24,7 @@ a. Go ahead and **access the Google Play store** on your smartphone and **downlo
 
 b. Now, **plug the board to your laptop** via the micro-USB cord and set the board aside for now. You're not going to need it until the very end of this tutorial.
 
-## Create your prototype
+# Step 2. Create your prototype
 
 The first step to take (beyond setting everything up) is to **set up your prototypes** with your GPIO, PWD, and UART data channels.
 
@@ -59,7 +60,7 @@ h. Finally, let's include the UART type data channel. Repeat **steps 4 and 5**, 
 
 ![]( ../images/img_linkitconnect7681_08.png )
 
-## Connect your board to Wi-Fi
+# Step 3.  Connect your board to Wi-Fi
 
 a. Let's connect that board of yours to Wi-Fi. Open up the **MCS mobile app**, and **sign in** with your details. After signing in, tap the **add icon** on the **bottom right corner**.
 
@@ -75,7 +76,7 @@ c. Enter your **SSID** and **password**, and hit **Start**.
 
 d. **Wait a few seconds** for your device to pop up on the screen. If it doesn't, please first make sure that your **Wi-Fi is live** and that you are in an **area with good reception**, and then try again. Once your device is found, the app will immediately **jump back** to the "Add Devices" screen. If not, however, hit Cancel to return back to the "Add Devices" screen.
 
-## Register a test device
+# Step 4.  Register a test device
 
 a. Almost done; just need to register your LinkIt Connect 7681 to your MCS account. Hit the plus icon next to your Wi-Fi that you connected to in the previous section.
 
@@ -93,7 +94,7 @@ d. Your device list will refresh, now displaying the device you just registered,
 
 ![]( ../images/img_linkitconnect7681_15.png )
 
-## Run it and go!
+# Step 5.  Run it and go!
 
 a. Now time for the easiest step! Just **tap on the device** you registered in the previous step.
 
