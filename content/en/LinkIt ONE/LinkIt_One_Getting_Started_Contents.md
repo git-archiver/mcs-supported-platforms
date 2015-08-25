@@ -1,6 +1,6 @@
 # LinkIt One Tutorial
 
-# 1. Computer and Board Setup
+# Step 1. Computer and Board Setup
 
 Before you dump some code onto your board and link it up to the cloud, you're going to want to make sure your computer and board are set up the right way. This can be done in three steps:
 
@@ -20,7 +20,7 @@ An excellent guide for this setup can be found [here](http://labs.mediatek.com/s
 
 **Just a note: The current LinkIt One SDK is only compatible with Arduino IDE versions 1.5.6-r2 BETA or 1.5.7 BETA.**
 
-# 2. Add Libraries
+# Step 2. Add Libraries
 
 Now that your computer and your IDEs are all set up, it's time to integrate some libraries! For this example, the only library we need is the HttpClient library, which can be found [here](https://github.com/amcewen/HttpClient/releases). Download the .zip file, then open up your Arduino IDE.
 
@@ -28,7 +28,7 @@ In the **Sketch** drop-down, click on **Import Libraries**, then navigate to you
 ![]( ../images/img_linkitone_01.png )
 
 
-# 3. Cloud Setup
+# Step 3. Cloud Setup
 
 Almost there! At this point, you're going to want to set up the MCS cloud so you can control and track your board. We've made it really easy; no downloading or coding required!
 
@@ -120,7 +120,7 @@ Here's a quick summary of all the key pieces of information we've obtained so fa
 
 **Just a note: the deviceId and deviceKey shown here will be different from yours. Make sure to use your obtained values instead!**
 
-# 4. Add Source Code
+# Step 4. Add Source Code
 
 You're finally all set to splash some code onto your board. Open a new sketch in your Arduino IDE and paste the following code into it: [here](https://raw.githubusercontent.com/Mediatek-Cloud/MCS/master/source_code/linkit_sample_ino.ino)
 
@@ -143,7 +143,7 @@ c. Uploads the D13 (LED) status to MCS by using the RESTful API once every 5 sec
 d. Listens for any switch commands issued by MCS via the TCP connection.
 e. Refresh the heartbeat for the TCP connection every 90 seconds.
 
-# 5. Run it and go!
+# Step 5. Run it and go!
 
 You're all done; time to see it in action! Make sure nothing's wrong with your Wi-Fi and that your board can see it, and upload your code to your board. Check your Serial Output to confirm that it's live and connected.
 
