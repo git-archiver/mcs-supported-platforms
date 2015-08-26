@@ -1,4 +1,4 @@
-# LinkIt One Tutorial
+## LinkIt One Tutorial
 
 # Step 1. Computer and Board Setup
 
