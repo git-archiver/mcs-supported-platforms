@@ -24,7 +24,7 @@ a. Go ahead and **access the Google Play store** on your smartphone and **downlo
 
 b. Now, **plug the board to your laptop** via the micro-USB cord and set the board aside for now. You're not going to need it until the very end of this tutorial.
 
-# Step 2. Create your prototype
+# Step 2. Create prototype
 
 The first step to take (beyond setting everything up) is to **set up your prototypes** with your GPIO, PWD, and UART data channels.
 
@@ -60,7 +60,7 @@ h. Finally, let's include the UART type data channel. Repeat **steps 4 and 5**, 
 
 ![]( ../images/img_linkitconnect7681_08.png )
 
-# Step 3.  Connect your board to Wi-Fi
+# Step 3.  Connect board to Wi-Fi
 
 a. Let's connect that board of yours to Wi-Fi. Open up the **MCS mobile app**, and **sign in** with your details. After signing in, tap the **add icon** on the **bottom right corner**.
 
